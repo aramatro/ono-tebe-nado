@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 
-.no-border-bottom a {
+.no-border-bottom {
   border-bottom: none;
 }
 
@@ -47,7 +47,7 @@
 
 .cover {
   position: relative;
-  padding: 165px 50px 185px;
+  padding: 165px 50px 51px;
   background: url(../images/cover.jpg) center / cover;
 }
 
@@ -63,15 +63,16 @@
 .cover__title {
   position: relative;
   color: #fff;
+  font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .aligned-text {
   display: block;
 }
+
 .aligned-text_center {
   line-height: 138%;
   text-align: center;
@@ -82,7 +83,7 @@
   text-align: right;
 }
 
-.letter-spacing_06 {
+.letter-spacing-extended {
   letter-spacing: 0.6em;
 }
 
@@ -92,11 +93,11 @@
 
 .cover__description {
   position: relative;
-  top: 135px;
-  left: 28px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 637px 1fr;
   align-items: center;
   gap: 79px;
+  margin: 135px 0 0 28px;
 }
 
 .cover__description-text {
@@ -109,9 +110,10 @@
 
 .bet-button {
   min-width: 256px;
-  min-height: 51px;
   border: 1px solid #fff;
+  padding: 11px 31px;
   color: #fff;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   background: transparent;
@@ -126,9 +128,9 @@
 }
 
 .section-title {
+  font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .lots__card-list {
@@ -190,11 +192,8 @@
   font-size: 20px;
 }
 
-.letter-spacing_013 {
-  letter-spacing: 0.13em;
-}
-
 .lots__look-more-link {
+  display: inline-block;
   margin: 30px 0 0 40px;
   font-size: 20px;
 }
@@ -230,22 +229,6 @@
   gap: 24px;
   font-size: 20px;
   letter-spacing: 0.01em;
-}
-
-.letter-spacing_002 {
-  letter-spacing: 0.02em;
-}
-
-.letter-spacing_003 {
-  letter-spacing: 0.03em;
-}
-
-.letter-spacing_004 {
-  letter-spacing: 0.04em;
-}
-
-.letter-spacing_-001 {
-  letter-spacing: -0.01em;
 }
 
 .footer {
