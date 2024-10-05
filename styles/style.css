@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 86px 51px 91px 51px;
+  padding: 93px 51px 91px 51px;
 }
 
 .header__links-list {
@@ -34,7 +34,7 @@
 }
 
 .address {
-  width: 240px;
+  max-width: 240px;
   font: inherit;
   font-size: 18px;
   line-height: 135%;
@@ -48,9 +48,7 @@
 .cover {
   position: relative;
   padding: 165px 50px 185px;
-  background-image: url(../images/cover.jpg);
-  background-position: center;
-  background-size: cover;
+  background: url(../images/cover.jpg) center / cover;
 }
 
 .overlay::before {
@@ -110,8 +108,8 @@
 }
 
 .bet-button {
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   border: 1px solid #fff;
   color: #fff;
   font-size: 22px;
@@ -144,7 +142,7 @@
   position: relative;
   display: flex;
   flex-grow: 1;
-  width: 334px;
+  max-width: 334px;
   min-height: 563px;
 }
 
@@ -271,6 +269,6 @@
 }
 
 .footer__social-icon {
-  width: 48px;
-  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
 }
